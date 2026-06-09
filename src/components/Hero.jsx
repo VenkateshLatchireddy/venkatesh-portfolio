@@ -4,8 +4,11 @@ import HeroImgHover from "../assets/images/hero2.jpg";
 
 export default function Hero({ isVisible }) {
   return (
-    <section id="home" className="min-vh-100 d-flex align-items-center bg-light"
-    style={{overflow:"hidden"}}>
+    <section
+      id="home"
+      className="min-vh-100 d-flex align-items-center bg-light"
+      style={{ overflow: "hidden" }}
+    >
       <div className="container">
         <div className="row align-items-center">
           {/* LEFT: Text Content */}

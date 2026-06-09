@@ -1,0 +1,96 @@
+/* Global scrolling and mobile spacing fixes */
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS variable for navbar height so sections can adapt */
+:root {
+  --navbar-height: 70px; /* default */
+}
+
+/* Larger navbar on small screens (taller brand + toggler) */
+@media (max-width: 767.98px) {
+  :root {
+    --navbar-height: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --navbar-height: 110px;
+  }
+}
+
+/* Ensure sections don't get hidden behind the fixed navbar on scroll */
+section {
+  scroll-margin-top: var(--navbar-height);
+}
+
+/* Make the hero sit below the navbar and reduce its min-height accordingly */
+#home {
+  padding-top: calc(var(--navbar-height) + 0.5rem);
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+/* Keep navbar visually consistent and center toggler/brand */
+.navbar {
+  height: var(--navbar-height) !important;
+  min-height: var(--navbar-height) !important;
+  display: flex;
+  align-items: center;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+}
+.navbar-toggler {
+  margin-top: 0 !important;
+  align-self: center !important;
+}
+
+/* Prevent navbar children from wrapping and keep toggler on same row */
+.navbar .container {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+}
+
+/* Make brand truncate instead of pushing toggler to next line */
+.navbar-brand {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 62%;
+}
+
+.navbar-toggler {
+  flex: 0 0 auto;
+  margin-left: 0.5rem;
+}
+
+/* On very small screens reduce brand size to avoid wrapping (Samsung S8+, etc.) */
+@media (max-width: 380px) {
+  .navbar-brand {
+    max-width: 55%;
+    font-size: 0.95rem;
+  }
+  .navbar-brand span {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (min-width: 381px) and (max-width: 420px) {
+  .navbar-brand {
+    max-width: 58%;
+    font-size: 1rem;
+  }
+  .navbar-brand span {
+    font-size: 1rem !important;
+  }
+}
+

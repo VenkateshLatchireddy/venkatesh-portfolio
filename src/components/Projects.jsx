@@ -6,9 +6,36 @@ import foodieland from "../assets/images/foodieland.png";
 import signalainews from"../assets/images/signalainews.png"
 import milkdash from"../assets/images/milkdash.png"
 import nxt from "../assets/images/nxt.png"; 
-
+import lgevents from "../assets/images/lg-events.png"
+import eventshub from "../assets/images/eventshub.png"
+import skyclothing from "../assets/images/skyclothing.png"
 export default function Projects({ isVisible }) {
   const projects = [
+
+  {
+    title: "LG Events",
+    description: "A React.js-powered event portfolio website designed to showcase weddings, celebrations, and successful events beautifully. Features smooth animations, complete gallery management for displaying events and moments, and a responsive, dynamic interface. Built with React and Tailwind CSS to ensure fast performance and a seamless user experience.",
+    tech: ["React","Tailwind CSS","Framer Motion"],
+    image: lgevents, 
+    github: "https://github.com/VenkateshLatchireddy/LG-EVENTS",
+    demo: "https://lakshmi-ganapathi-events.vercel.app/",
+  },
+    {
+    title: "Events Hub",
+    description: "A MERN stack-powered event management application designed to handle event browsing, user registrations, and seat availability efficiently. Features secure JWT authentication, complete CRUD for managing events with real-time capacity updates, and a dynamic dashboard interface. Built with React, Node.js, and MongoDB to ensure scalable data handling and a seamless user experience.",
+    tech: ["React", "Node.js", "Mongo DB","Express.js"],
+    image: eventshub, 
+    github: "https://github.com/VenkateshLatchireddy/EventHub",
+    demo: "https://event-hub-alpha-lemon.vercel.app/",
+  },
+      {
+    title: "Sky Clothing",
+    description: "A MERN stack-powered e-commerce platform designed to handle product browsing, cart management, and order processing efficiently. Features secure JWT authentication, complete CRUD for products with stock tracking, and email notifications using Nodemailer and SendGrid. Built with React, Node.js, and MongoDB to ensure scalable data handling and a seamless checkout experience.",
+    tech: ["React", "Node.js", "Mongo DB","Express.js"],
+    image: skyclothing, 
+    github: "https://github.com/VenkateshLatchireddy/clothing-ecommerce",
+    demo: "https://clothing-ecommerce-dusky.vercel.app/",
+  },
       {
     title: "SignalAI News",
     description:"A multilingual AI-powered news platform delivering real-time updates, personalized feeds, and seamless browsing. Built with the MERN stack, featuring JWT authentication, role-based access, live news integration, and a fast, responsive newspaper-style UI crafted with React and modern CSS." ,
@@ -18,7 +45,7 @@ export default function Projects({ isVisible }) {
     demo: "https://signalai-news-by-venkatesh.netlify.app/",
   },
    {
-    title: "Milkdash ",
+    title: "Milkdash",
     description: "A React.js-powered dairy management system designed to track milk production, sales, and distribution efficiently. Features secure admin authentication, full CRUD capabilities for managing products and pricing, and a smooth, dynamic interface. Built with React and MySQL to ensure reliable data handling and a seamless user experience.",
     tech: ["React", "Node.js", "MySQL","Express.js","Flexbox"],
     image: milkdash, 

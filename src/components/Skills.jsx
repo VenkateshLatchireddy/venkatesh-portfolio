@@ -16,6 +16,13 @@ export default function Skills({ isVisible }) {
     { name: "Bootstrap", icon: "💠", color: "#7952B3" },
     { name: "Tailwind CSS", icon: "🌬️", color: "#38B2AC" },
     { name: "AI Prompting", icon: "🧠", color: "#FF6B6B" },
+    { name: "TypeScript", icon: "🟦", color: "#3178C6" },
+    { name: "Material UI", icon: "🎛️", color: "#007FFF" },
+    { name: "Redux", icon: "🌀", color: "#764ABC" },
+    { name: "Linux", icon: "🐧", color: "#FCC624" },
+    { name: "Python", icon: "🐍", color: "#306998" },
+    { name: "VPS Deployment", icon: "🖥️", color: "#6c757d" },
+    { name: "Postman", icon: "🧪", color: "#FF6C37" },
   ];
 
   return (
