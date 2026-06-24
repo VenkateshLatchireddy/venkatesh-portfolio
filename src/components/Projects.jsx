@@ -9,8 +9,17 @@ import nxt from "../assets/images/nxt.png";
 import lgevents from "../assets/images/lg-events.png"
 import eventshub from "../assets/images/eventshub.png"
 import skyclothing from "../assets/images/skyclothing.png"
+import travelwave from "../assets/images/travelwave.png"
 export default function Projects({ isVisible }) {
   const projects = [
+      {
+    title: "TravelWave",
+  description: "An AI-powered travel planning platform designed to create personalized itineraries, estimate trip budgets, and enhance travel experiences. Features AI-generated travel plans, PDF trip downloads, weather-based packing recommendations, and email notifications. Built with React, TypeScript, Node.js, Express, and MongoDB for a seamless user experience.",
+    tech: ["React","Typescript","Tailwind CSS","Mongo DB"],
+    image: travelwave, 
+    github: "https://github.com/VenkateshLatchireddy/TravelWave",
+    demo: "https://travel-wave-eta.vercel.app/",
+  },
 
   {
     title: "LG Events",
